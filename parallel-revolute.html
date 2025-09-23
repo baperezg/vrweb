@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Lightweight Parallel-Revolute Robot</title>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <!--<script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script>
+    -->
+  </head>
+
+  <body>
+    <!-- 
+  <h1>
+    Automated robotic cell with ABB IRB 1410
+  </h1>
+
+ <a href="./lightweight.pararevolute.html" target="_blank">Link to Lightweight Parallel-Revolute Robot</a>
+-->
+
+    <a-scene>
+      <a-assets>
+        <a-entity
+          id="robot"
+          src="./parallel-revolute1.glb"
+        ></a-entity>
+      </a-assets>
+      <a-entity
+        gltf-model="#robot"
+        scale="30 30 30"
+        position="0 0 -5"
+        rotation="180 0 0"
+        animation-mixer
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>

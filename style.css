@@ -1,0 +1,42 @@
+button {
+   padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+  background-color: #000000;
+}
+
+button#aframe {
+  background-color: red;
+  color: white;
+  position: relative;
+}
+
+button#x3dom {
+  background-color: blue;
+  color: white;
+}
+body {
+  background-color: #f0f0f0; /* Cambiar color de fondo a gris */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+button#aframe:hover .tooltip {
+  visibility: visible; /* Mostrar la descripción emergente al poner el mouse encima */
+}

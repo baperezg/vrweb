@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Automated robotic cell</title>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <!--<script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script>
+    -->
+  </head>
+
+  <body>
+    <!-- 
+  <h1>
+    Automated robotic cell with ABB IRB 1410
+  </h1>
+
+ <a href="https://new.abb.com/products/robotics/robots/articulated-robots/irb-1410" target="_blank">Link to ABB IRB 1410</a>
+-->
+
+    <a-scene>
+      <a-assets>
+        <a-entity
+          id="celda"
+          src="./irb1410jointsCelda.glb"
+        ></a-entity>
+      </a-assets>
+      <a-entity
+        gltf-model="#celda"
+        scale="1 1 1"
+        position="0 0 -2"
+        rotation="0 90 0"
+        animation-mixer
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
